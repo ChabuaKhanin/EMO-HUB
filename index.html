@@ -576,7 +576,7 @@
                   <table className="w-full text-left whitespace-nowrap border-collapse">
                     <thead className="sticky top-0 z-30 bg-slate-50/80 backdrop-blur-xl">
                       <tr className="text-[10px] md:text-[11px] uppercase tracking-wider font-bold text-slate-500">
-                        <th className="px-4 py-4 cursor-pointer hover:text-blue-600 transition-colors sticky left-0 z-40 bg-slate-50/80 backdrop-blur-xl border-b border-slate-200/60 sticky-col" onClick={() => requestSort('hub')}>
+                        <th className="px-4 py-4 cursor-pointer hover:text-blue-600 transition-colors sticky left-0 z-40 bg-slate-50/80 backdrop-blur-xl border-b border-slate-200/60 sticky-col max-w-[110px] sm:max-w-[160px] md:max-w-none" onClick={() => requestSort('hub')}>
                           <div className="flex items-center">Hub {getSortIcon('hub')}</div>
                         </th>
                         <th className="px-4 py-4 cursor-pointer hover:text-blue-600 transition-colors border-b border-slate-200/60" onClick={() => requestSort('ofd')}>
@@ -610,8 +610,8 @@
                             className={`premium-row cursor-pointer ${isCritical ? 'critical-row' : ''}`}
                             title="Click for Performance Analytics"
                           >
-                            <td className={`px-4 py-3.5 text-[12px] md:text-[13.5px] font-bold text-slate-800 sticky left-0 z-10 bg-white/50 backdrop-blur-sm sticky-col`}>
-                              <div className="flex items-center gap-2">
+                            <td className={`px-3 sm:px-4 py-3.5 text-[12px] md:text-[13.5px] font-bold text-slate-800 sticky left-0 z-10 bg-white/50 backdrop-blur-sm sticky-col max-w-[110px] sm:max-w-[160px] md:max-w-none`}>
+                              <div className="flex items-center gap-1.5 sm:gap-2 overflow-hidden">
                                   {isCritical && <AlertCircle className="w-3.5 h-3.5 text-rose-500 shrink-0" />}
                                   <span className="truncate">{row.hub}</span>
                               </div>
